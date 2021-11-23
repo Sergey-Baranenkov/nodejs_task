@@ -13,15 +13,16 @@
     "emitDecoratorMetadata": true,
     "typeRoots": [
       "./node_modules/@types",
-      "types",
+      "types"
     ],
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "include": [
-    "."
+    ".",
+    "node_modules/@types/jest/index.d.ts",
   ],
   "exclude": [
     "./node_modules",
-    "./build",
+    "./build"
   ]
 }
